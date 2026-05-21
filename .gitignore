@@ -1,0 +1,63 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Large data files (download fresh on VPS) ─────────────────────────────────
+data/raw/
+data/processed/
+
+# ── Trained model binaries (too large for git) ───────────────────────────────
+models/saved/
+
+# ── Large report outputs (download from VPS when done) ───────────────────────
+reports/*.parquet
+reports/*.pkl
+reports/*.png
+reports/*.html
+reports/equity_curve*
+reports/returns*
+reports/oos_signals*
+reports/drift_report*
+reports/benchmarks*
+reports/metrics*
+reports/feature_importance*
+reports/fold_summary*
+
+# ── KEEP these small but important files in git ───────────────────────────────
+# reports/optuna_best_params.json  ← kept (Optuna resume cache)
+!reports/optuna_best_params.json
+
+# ── Logs (large, regenerated each run) ───────────────────────────────────────
+logs/*.log
+
+# ── Optuna SQLite DB (large, kept in .cache) ─────────────────────────────────
+.cache/optuna_studies.db
+.cache/*.db
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/*.ipynb
+
+# ── OS files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project

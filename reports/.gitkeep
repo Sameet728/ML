@@ -1,0 +1,2 @@
+# This file ensures the reports directory is tracked by git.
+# Actual report files are excluded via .gitignore, but optuna_best_params.json is kept.
