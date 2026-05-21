@@ -13,8 +13,8 @@ scipy>=1.13.0
 ccxt>=4.3.0
 yfinance>=0.2.40
 
-# Technical indicators
-pandas-ta>=0.3.14b
+# Technical indicators (install from GitHub — PyPI version not Python 3.11 compatible)
+# pandas-ta installed separately via: pip install git+https://github.com/twopirllc/pandas-ta
 
 # Machine learning
 scikit-learn>=1.5.0
